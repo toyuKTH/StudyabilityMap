@@ -1,0 +1,48 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  height: 100%;
+
+  .about-sidebar {
+    margin: 0 20px;
+    padding-top: 30px;
+    height: inherit;
+    flex: 0;
+    box-sizing: border-box;
+    .about-link {
+      width: 180px;
+      margin: 5px auto 0;
+      background-color: #39596a;
+      color: #fff;
+      &:hover {
+        background-color: #517f96;
+      }
+    }
+  }
+
+  .about-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: inherit;
+    padding: 20px;
+    .about-section {
+      color: black;
+      margin: 10px;
+      width: 100%;
+      border-bottom: 1px solid #d3d3d3;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
